@@ -1356,7 +1356,7 @@ a.paginator_checked:hover {
   top: 35px;
   left: 20px;
   width: 15px;
-  height: 1px;
+  height: 2px;
   background-color: black;
   border-radius: 1px;
   cursor: pointer;
