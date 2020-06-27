@@ -510,14 +510,14 @@ input {
   margin-left: 26px;
   width: 560px;
   min-height: 229px;
-  background-image: url("../img/background-choсolate.jpg");
+  background-image: url("../img/background-chocolate.jpg");
   border-radius: 16px;
 }
 /* СТИЛИЗАЦИЯ КАТАЛОГА */
 .catalog-preview {
   margin-top: 40px;
   width: 1146px;
-  height: 325px;
+  height: 324px;
   position: relative;
   display: flex;
   flex-wrap: nowrap;
