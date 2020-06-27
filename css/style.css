@@ -359,16 +359,17 @@ input {
   font-size: 14px;
   line-height: 16px;
   color: var(--basic-white);
-  display: inline-block;
 }
 .work-header_phone {
-  display: inline-block;
+  display: block;
   margin-top: 6px;
+  margin-right: 10px;
   font-style: normal;
   font-weight: bold;
   margin-right: 17px;
   font-size: 22px;
   line-height: 24px;
+  color: var(--basic-white);
 }
 /* ASIDE OVER ~~~~~~~~~~~~*/
 
@@ -502,14 +503,14 @@ input {
 .banner-one {
   width: 560px;
   min-height: 229px;
-  background: url("../img/Малиновый фон.jpg") no-repeat;
+  background: url("../img/background-raspberry.jpg") no-repeat;
   border-radius: 16px;
 }
 .banner-two {
   margin-left: 26px;
   width: 560px;
   min-height: 229px;
-  background-image: url("../img/Шоколадный фон.jpg");
+  background-image: url("../img/background-choсolate.jpg");
   border-radius: 16px;
 }
 /* СТИЛИЗАЦИЯ КАТАЛОГА */
@@ -593,7 +594,7 @@ input {
   margin-top: 40px;
   width: 1146px;
   min-height: 306px;
-  background-image: url("../img/Вафля паттерн.png");
+  background-image: url("../img/waffle-pattern.pngы");
   border-radius: 20px;
   margin-bottom: 40px;
 }
@@ -681,7 +682,7 @@ input {
   width: 560px;
   height: 220px;
   border-radius: 16px;
-  background-image: url("../img/Клубничный фон.jpg");
+  background-image: url("../img/background-strawberry.jpg");
 }
 .news h4 {
   margin: 0;
@@ -702,13 +703,14 @@ input {
   line-height: 30px;
   color: var(--basic-extra-black);
   display: inline-block;
+  vertical-align: baseline;
 }
 .mail {
   margin-left: 28px;
   width: 560px;
   min-height: 220px;
   border-radius: 16px;
-  background: url("../img/Почтовый фон.png") -4px 0px;
+  background: url("../img/background-post.png") -4px 0px;
 }
 .mail p {
   margin: 0;
@@ -749,7 +751,7 @@ input {
   margin-left: -27px;
   margin-bottom: 36px;
   height: 430px;
-  background: url("../img/Карта.png") no-repeat;
+  background: url("../img/map.png") no-repeat;
   position: relative;
 }
 .contacts {
@@ -783,6 +785,7 @@ input {
 }
 .contacts a {
   display: inline-block;
+  vertical-align: baseline;
   margin-left: 25px;
   margin-top: 27px;
   padding: 13px 28px;
@@ -795,8 +798,6 @@ input {
   min-height: 460px;
   width: 477px;
   background-color: #f8f7f4;
-/*  top: -100px;
-  left: 350px; */
   top: -2000px;
   border-radius: 10px;
   position: relative;
