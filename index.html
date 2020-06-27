@@ -21,11 +21,11 @@
        <img src="./img/logo.svg" alt="Логотип" width="154" height="64" alt="Логотип магазина Глейси">
       </a>
       <ul class="site-navigation">
-       <li class="navigation_catalog">
-        <a class="navigation_catalog_a" href="catalog.html">Каталог</a>
+       <li class="navigation-catalog">
+        <a class="navigation-catalog_a" href="catalog.html">Каталог</a>
 
          <div class="hide-navigation">
-          <span class="new">Новинки</span>
+          <span>Новинки</span>
            <ul class="hide_catalog">
             <li>
              <a href="#">Сливочное</a>
@@ -43,10 +43,10 @@
           </div>
 
        </li>
-       <li class="navigation_delivery">
+       <li class="navigation-delivery">
         <a href="#">Доставка и оплата</a>
        </li>
-       <li class="navigation_company">
+       <li class="navigation-company">
         <a href="#">О Компании</a>
        </li>
       </ul>
@@ -55,16 +55,17 @@
        <a class="user-search" href="#search"><img src="./img/search.svg" alt="Поиск" width="16" height="16"></a>
 
         <div class="hide-search">
-         <form class="form_search" action="#" method="post">
-          <input class="input_search" type="text" name="search" id="search" placeholder="Крем-брюле">
+         <form class="form-search" action="#" method="post">
+          <input class="input-search" type="text" name="search" id="search" placeholder="Крем-брюле">
          </form>
         </div>
 
        <a class="user-login" href="#login">Вход</a>
+
         <div class="hide-login">
          <form class="form_login" action="#" method="post">
-          <input class="input_email" type="text" name="email" placeholder="Электронная почта">
-          <input class="input_password" type="password" name="password" placeholder="Пароль">
+          <input class="input-email" type="text" name="email" placeholder="Электронная почта">
+          <input class="input-password" type="password" name="password" placeholder="Пароль">
           <button type="submit" class="button">Войти</button>
           <div class="registration">
            <a href="#forget">Забыли пароль?</a>
@@ -113,12 +114,12 @@
     </section>
 
     <section class="banners">
-     <div class="banner_one">
+     <div class="banner-one">
       <h2>Малинка даром!</h2>
       <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
       <a class="button" href="#">Хочу варенье!</a>
      </div>
-     <div class="banner_two">
+     <div class="banner-two">
       <h2>Шоколадки даром!</h2>
       <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
       <a class="button" href="#">Хочу шоколадки!</a>
@@ -131,28 +132,40 @@
        <img src="./img/icecream1.jpg" alt="Мороженное" width="267" height="267">
        <span class="catalog-item_price">310 ₽</span>
        <span class="catalog-item_weight">/кг</span>
-       <p class="catalog-item__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+       <p class="catalog-item_description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+       <div class="catalog-item_fast-check">
+        <a class="button" href="#">Быстрый просмотр</a>
+       </div>
      </div>
 
      <div class="catalog-item catalog-item_main-page">
        <img src="./img/icecream2.jpg" alt="Мороженное" width="267" height="267">
        <span class="catalog-item_price">380 ₽</span>
        <span class="catalog-item_weight">/кг</span>
-       <p class="catalog-item__description">Сливочно-кофейное с кусочками шоколада</p>
+       <p class="catalog-item_description">Сливочно-кофейное с кусочками шоколада</p>
+       <div class="catalog-item_fast-check">
+        <a class="button" href="#">Быстрый просмотр</a>
+       </div>
      </div>
 
      <div class="catalog-item catalog-item_main-page">
        <img src="./img/icecream3.jpg" alt="Мороженное" width="267" height="267">
        <span class="catalog-item_price">355 ₽</span>
        <span class="catalog-item_weight">/кг</span>
-       <p class="catalog-item__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+       <p class="catalog-item_description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+       <div class="catalog-item_fast-check">
+        <a class="button" href="#">Быстрый просмотр</a>
+       </div>
      </div>
 
      <div class="catalog-item catalog-item_main-page">
        <img src="./img/icecream4.jpg" alt="Мороженное" width="267" height="267">
        <span class="catalog-item_price">415 ₽</span>
        <span class="catalog-item_weight">/кг</span>
-       <p class="catalog-item__description">Сливочное крем-брюле с карамельной подливкой</p>
+       <p class="catalog-item_description">Сливочное крем-брюле с карамельной подливкой</p>
+       <div class="catalog-item_fast-check">
+        <a class="button" href="#">Быстрый просмотр</a>
+       </div>
      </div>
 
     </section>
@@ -188,7 +201,7 @@
 
     <section class="map">
      <article class="contacts">
-      <p class="contacts_address">Адрес главного офиса<br> и офлайн-магазина:<br>
+      <p class="contacts-address">Адрес главного офиса<br> и офлайн-магазина:<br>
       <span>ул. Большая Конюшенная<br>19/8, Санкт-Петербург<span><br></p>
       <p class="contacts_phone">Для заказов по телефону:<br>
       <span>8 812 450-25-25</span><br>
@@ -197,16 +210,7 @@
      </article>
     </section>
 
-    <div class="feedback">
-     <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
-     <span>Мы обязательно вам ответим!</span>
-      <form class="form_feedback" action="#" method="post">
-       <input type="text" class="name_feedback" name="name" placeholder="Как вас зовут?">
-       <input type="text" class="email_feedback" name="email" placeholder="Ваша почта для ответа?">
-       <textarea class="comment_feedback" name="comment" rows="8">Напишите что-нибудь...</textarea>
-       <button type="submit" class="button">Отправить</button>
-      </form>
-     </div>
+
 
    </div> <!--- CONTAINTER OFF -->
   </main>
@@ -253,9 +257,20 @@
 
     </div> <!-- CONTAINER FOOTER OFF-->
    </footer>
- </div>
+  </div>
 
-  <script src="./js/script.js"></script>
+  <div class="feedback">
+   <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
+   <span>Мы обязательно вам ответим!</span>
+    <form class="feedback-form" action="#" method="post">
+     <input type="text" class="feedback-name" name="name" placeholder="Как вас зовут?">
+     <input type="text" class="feedback-email" name="email" placeholder="Ваша почта для ответа?">
+     <textarea class="feedback-comment" name="comment" rows="8">Напишите что-нибудь...</textarea>
+     <button type="submit" class="button">Отправить</button>
+    </form>
+   </div>
+
+ <script src="./js/script.js"></script>
 
  </body>
 </html>
