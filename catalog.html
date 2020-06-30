@@ -5,7 +5,7 @@
    <title>HTML Academy: Глейси</title>
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-min.css">
  </head>
  <body>
 
@@ -32,7 +32,7 @@
 
       <div class="hide-search">
        <form class="form-search" action="#" method="post">
-       <input class="input-search" type="text" name="search" id="search" placeholder="Крем-брюле">
+        <input class="input-search" type="text" name="search" id="search" placeholder="Крем-брюле"><label for="search"></label>
        </form>
       </div>
 
@@ -40,8 +40,8 @@
 
       <div class="hide-login">
        <form class="form_login" action="#" method="post">
-        <input class="input-email" type="text" name="email" placeholder="Электронная почта">
-        <input class="input-password" type="password" name="password" placeholder="Пароль">
+        <input class="input-email" type="text" name="email" id="login-email" placeholder="Электронная почта"><label for="login-email"></label>
+        <input class="input-password" type="password" name="password" id="login-password" placeholder="Пароль"><label for="login-password"></label>
         <button type="submit" class="button">Войти</button>
         <div class="registration">
          <a href="#forget">Забыли пароль?</a>
@@ -100,9 +100,10 @@
 
   <h1>Сливочное мороженое</h1>
 
-  <form class="filter" action="#" method="post">
+  <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
     <fieldset class="filter-list">
      <legend class="sort">Сортировка:</legend>
+     <label for="sort"></label>
      <select name="sort">
       <option value="popular">по популярности</option>
       <option value="low-price">Сначала недорогие</option>
@@ -145,10 +146,10 @@
         <input class="visually-hidden filter-input-checkbox" type="checkbox" name="chocolate" id="chocolate" checked><label for="chocolate">шоколадные</label>
       </li>
       <li class="filter-option filter-checkbox">
-      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="sugar" id="sugar"><label for="sugar">сахарные присыпки</label>
+       <input class="visually-hidden filter-input-checkbox" type="checkbox" name="sugar" id="sugar"><label for="sugar">сахарные присыпки</label>
       </li>
       <li class="filter-option filter-checkbox">
-      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apples" id="fruits"><label for="fruits">фрукты</label>
+       <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apples" id="fruits"><label for="fruits">фрукты</label>
       </li>
       <li class="filter-option filter-checkbox">
        <input class="visually-hidden filter-input-checkbox" type="checkbox" name="syrup" id="syrup"><label for="syrup">сиропы</label>
@@ -159,7 +160,7 @@
      </ul>
     </fieldset>
 
-    <input type="submit" value="Применить">
+    <input class="form-submit" type="submit" value="Применить">
 
   </form>
 
@@ -333,11 +334,15 @@
      </li>
     </ul>
 
-    <p class="copyright">Сделано в <a href="#">HTML Academy</a> © 2019</p>
+    <div class="copyright">
+     <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/logohtml.png" width="108" height="39" alt="Логотип Академии"></a>
+     <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+    </div>
+
   </div>
   </div>
  </footer>
 
- <script src="./js/catalog_script.js"></script>
+ <script src="./js/catalog_script-min.js"></script>
  </body>
 </html>

@@ -5,7 +5,7 @@
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style-min.css">
  </head>
  <body>
   <input type="radio" id="top_slider_checkbox_1" name="change-body" class="change-radio" checked>
@@ -22,13 +22,13 @@
       </a>
       <ul class="site-navigation">
        <li class="navigation-catalog">
-        <a class="navigation-catalog_a" href="catalog.html">Каталог</a>
+        <a class="navigation-catalog_a" href="#">Каталог</a>
 
          <div class="hide-navigation">
           <span>Новинки</span>
            <ul class="hide_catalog">
             <li>
-             <a href="#">Сливочное</a>
+             <a href="catalog.html">Сливочное</a>
             </li>
             <li>
              <a href="#">Щербеты</a>
@@ -56,7 +56,7 @@
 
         <div class="hide-search">
          <form class="form-search" action="#" method="post">
-          <input class="input-search" type="text" name="search" id="search" placeholder="Крем-брюле">
+          <input class="input-search" type="text" name="search" id="search" placeholder="Крем-брюле"><label for="search"></label>
          </form>
         </div>
 
@@ -64,8 +64,8 @@
 
         <div class="hide-login">
          <form class="form_login" action="#" method="post">
-          <input class="input-email" type="text" name="email" placeholder="Электронная почта">
-          <input class="input-password" type="password" name="password" placeholder="Пароль">
+          <input class="input-email" type="text" name="email" id="login-email" placeholder="Электронная почта"><label for="login-email"></label>
+          <input class="input-password" type="password" name="password" id="login-password" placeholder="Пароль"><label for="login-password"></label>
           <button type="submit" class="button">Войти</button>
           <div class="registration">
            <a href="#forget">Забыли пароль?</a>
@@ -192,7 +192,7 @@
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не
              спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <form action="#" method="post">
-       <input type="text" name="email" placeholder="  email@example.com">
+       <input type="text" name="email" id="subscribe-email" placeholder="  email@example.com"><label for="subscribe-email"></label>
        <button type="submit" class="button">Отправить</button>
       </form>
      </article>
@@ -251,7 +251,10 @@
       </li>
      </ul>
 
-     <p class="copyright">Сделано в <a href="#">HTML Academy</a> © 2019</p>
+     <div class="copyright">
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/logohtml.png" width="108" height="39" alt="Логотип Академии"></a>
+      <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+     </div>
 
      </div>
 
@@ -263,14 +266,14 @@
    <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
    <span>Мы обязательно вам ответим!</span>
     <form class="feedback-form" action="#" method="post">
-     <input type="text" class="feedback-name" name="name" placeholder="Как вас зовут?">
-     <input type="text" class="feedback-email" name="email" placeholder="Ваша почта для ответа?">
-     <textarea class="feedback-comment" name="comment" rows="8">Напишите что-нибудь...</textarea>
+     <input type="text" class="feedback-name" name="name" id="feedback-name" placeholder="Как вас зовут?"><label for="feedback-name"></label>
+     <input type="text" class="feedback-email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?"><label for="feedback-email"></label>
+     <textarea class="feedback-comment" name="comment" id="feedback-comment" rows="8">Напишите что-нибудь...</textarea><label for="feedback-comment"></label>
      <button type="submit" class="button">Отправить</button>
     </form>
    </div>
 
- <script src="./js/script.js"></script>
+ <script src="./js/script-min.js"></script>
 
  </body>
 </html>
